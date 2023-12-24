@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-body {
+    width: 70%;
+    height: 600px;
+    background-image: url("/assests/images/image1.jpg");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: sliderStart 10s linear infinite;
+}
+
+@keyframes sliderStart {
+    0% {
+        background-image: url(/assests/images/image1.jpg);
+    }
+
+    25% {
+        background-image: url(/assests/images/image2.jpg);
+    }
+
+    50% {
+        background-image: url(/assests/images/image3.jpg);
+    }
+
+    75% {
+        background-image: url(/assests/images/image4.jpg);
+    }
+}
+
+
+/* ================ Media Queries ================ */
+
+
+@media (min-width: 425px) and (max-width: 700px) {
+    .slider-body {
+        width: 95%;
+        height: 50px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .slider-body {
+        width: 85%;
+        height: 350px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .slider-body {
+        width: 90%;
+        height: 400px;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .slider-body {
+        width: 95%;
+        height: 400px;
+    }
+}
+
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .slider-body {
+        width: 95%;
+        height: 420px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .slider-body {
+        width: 96%;
+        height: 600px;
+    }
+}
